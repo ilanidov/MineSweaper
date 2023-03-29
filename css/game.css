@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+.cell {
+    border: 5px solid black;
+    font-size: large;
+    width: 100px;
+    height: 100px;
+    color: black;
+
+}
+
+table {
+    margin: auto;
+}
+
+
+.cover {
+    background-color: black;
+    border: 5px solid black;
+}
