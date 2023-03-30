@@ -9,13 +9,11 @@ body {
     width: 100px;
     height: 100px;
     color: black;
-
 }
 
 table {
     margin: auto;
 }
-
 
 .shown {
     background-color: rgb(251, 251, 251);
@@ -26,20 +24,40 @@ footer {
     font-style: oblique;
 }
 
-.score{
+.score {
     width: 450px;
     height: 80px;
     background-color: blue;
     margin: auto;
 }
-    
-.funcs{
+
+.funcs {
     width: 450px;
     height: 80px;
-    background-color:brown;
+    background-color: brown;
     margin: auto;
 }
 
-.flag{
+.flag {
     background-color: brown;
+}
+
+.restart {
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 20px;
+    padding-right: 10px;
+    font-size: larger;
+    padding: inherit;
+}
+
+.easy,
+.hard,
+.medium {
+    width: 50px;
+    height: 30px;
+    top: 10px;
+    left: 20px;
+    padding: inherit;
 }

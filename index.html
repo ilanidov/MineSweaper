@@ -12,13 +12,22 @@
 <body onload="onInit()">
     <div class="motherBoard">
         <div class="score">
-            <div class="timer"></div>
-            <button onclick="resetGame()" class="restart"></button>
+            <div class="timer">
+                <label class="minutes">00</label>
+                <label class="colon">:</label>
+                <label class="seconds">00</label>
+            </div>
+            <br>
+            <button onclick="resetGame()" class="restart">&#128515;</button>
             <div class="bombsCount"></div>
         </div>
         <div class="funcs">
             <div class="lifeCount"></div>
-            <div></div>
+            <div>
+                <button onclick="diffSelect(4)" class="easy">Easy</button>
+                <button onclick="diffSelect(8)" class="medium">Medium</button>
+                <button onclick="diffSelect(12)" class="hard">Hard</button>
+            </div>
             <div></div>
             <div></div>
         </div>
@@ -27,17 +36,16 @@
     <div class="myDiv">
         <table>
             <tbody class="board">
-    
+
             </tbody>
         </table>
     </div>
-<br>
-<br>
+    <br>
+    <br>
     <footer> Ilan Idov</footer>
 
-    <script src="js/game.js">
-    </script>
-    </script>
+    <script src="js/game.js"> </script>
+    <script src="js/util.js"> </script>
 </body>
 
 </html>
