@@ -9,39 +9,61 @@
     <link rel="stylesheet" href="css/game.css">
 </head>
 
-<body onload="onInit()">
-    <div class="motherBoard">
-        <div class="score">
+<body class="dark" onload="onInit()">
+    <div class="darkDiv motherBoard">
+
+        <div class="darkDiv score">
             <div class="timer">
+                <h3>Your score:</h3>
                 <label class="minutes">00</label>
                 <label class="colon">:</label>
                 <label class="seconds">00</label>
             </div>
-            <br>
-            <button onclick="resetGame()" class="restart">&#128515;</button>
-            <div class="bombsCount"></div>
-        </div>
-        <div class="funcs">
-            <div class="lifeCount"></div>
-            <div>
-                <button onclick="diffSelect(4)" class="easy">Easy</button>
-                <button onclick="diffSelect(8)" class="medium">Medium</button>
-                <button onclick="diffSelect(12)" class="hard">Hard</button>
+            <div id="smile">
+                <button onclick="resetGame()" class="dark restart">&#128515;</button>
+                <br>
+                <div class="lives">&#129312;&#129312;&#129312; </div>
+
             </div>
-            <div></div>
-            <div></div>
+            <div class="bombsCount">
+                <h3>Bombs Count:</h3>
+                <label><span class="bombsi">00</span></label>
+            </div>
+        </div>
+        <div class="darkDiv funcs">
+            <div>
+                <button onclick="diffSelect(4)" class="dark easy">Easy</button>
+                <button onclick="diffSelect(8)" class="dark medium">Medium</button>
+                <button onclick="diffSelect(12)" class="dark hard">Hard</button>
+            </div>
+            <div>
+            </div>
+            <div class="hints">
+
+            </div>
+            <div>
+                <button class="safe dark" onclick="safeClick()">Safe Clicks left: <span class="safec">3</span></button>
+                <br>
+                <button class="dark hint" onclick="hintsCounter(this)">💡</button>
+                <button class="dark hint" onclick="hintsCounter(this)">💡</button>
+                <button class="dark hint" onclick="hintsCounter(this)">💡</button>
+            </div>
+        </div>
+
+        <div class="darkDiv myDiv">
+            <table>
+                <tbody class="board">
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div>
+            <button class="dark btnMode" onclick="darkMode()">Dark Mode <span class="on">ON</span></button>
         </div>
 
     </div>
-    <div class="myDiv">
-        <table>
-            <tbody class="board">
 
-            </tbody>
-        </table>
-    </div>
-    <br>
-    <br>
     <footer> Ilan Idov</footer>
 
     <script src="js/game.js"> </script>

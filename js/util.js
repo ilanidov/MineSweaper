@@ -71,3 +71,37 @@ function getClassName(position) {
 
     return cellClass
 }
+
+function diffSelect(num) {
+    gLevel.SIZE = num
+    resetGame()
+}
+
+function setTimer() {
+    var minutesLabel = document.querySelector(".seconds")
+    var secondsLabel = document.querySelector(".minutes")
+    gIntervalID = setInterval(setTime, 1000)
+    function setTime() {
+        ++gGame.secsPassed
+        minutesLabel.innerHTML = pad(gGame.secsPassed % 60)
+        secondsLabel.innerHTML = pad(parseInt(gGame.secsPassed / 60))
+    }
+    function pad(val) {
+        var valString = val + ""
+        if (valString.length < 2) return "0" + valString
+        else return valString
+    }
+}
+
+function clearTimer() {
+    var minutesLabel = document.querySelector(".seconds")
+    var secondsLabel = document.querySelector(".minutes")
+    minutesLabel.innerHTML = '00'
+    secondsLabel.innerHTML = '00'
+}
+
+function getRandomIntExclu(min, max) {
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max - min) + min)
+}

@@ -1,14 +1,23 @@
 body {
     text-align: center;
-    background-color: rgb(17, 169, 169);
+    background-color: rgb(20, 17, 169);
+    background-image: url(../img/4.jpg);
+}
+
+.motherBoard {
+    background-color: rgb(198, 162, 162);
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .cell {
     border: 5px solid black;
-    font-size: large;
-    width: 100px;
-    height: 100px;
+    font-size: small;
+    width: 35px;
+    height: 35px;
     color: black;
+    border-radius: 10px;
 }
 
 table {
@@ -16,7 +25,7 @@ table {
 }
 
 .shown {
-    background-color: rgb(251, 251, 251);
+    background-color:rgb(246, 234, 222)
 }
 
 footer {
@@ -25,17 +34,27 @@ footer {
 }
 
 .score {
-    width: 450px;
+    width: 580px;
     height: 80px;
-    background-color: blue;
+    background-color: rgb(198, 162, 162);
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+
 .funcs {
-    width: 450px;
+    width: 580px;
     height: 80px;
-    background-color: brown;
+    background-color: rgb(198, 162, 162);
     margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .flag {
@@ -45,19 +64,48 @@ footer {
 .restart {
     width: 30px;
     height: 30px;
-    top: 10px;
-    left: 20px;
-    padding-right: 10px;
+    left: 50%;
     font-size: larger;
     padding: inherit;
+    top: 10%;
+    border-radius: 10px;
+    margin-top: 20px;
+
 }
+
 
 .easy,
 .hard,
 .medium {
-    width: 50px;
+    width: 55px;
     height: 30px;
     top: 10px;
     left: 20px;
     padding: inherit;
+    border-radius: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.bodyDark {
+    background-color: darkslategray;
+    border-color: black;
+    color: aliceblue;
+}
+
+.darkModeDiv {
+    background-color: rgb(129, 145, 227);
+    opacity: 0.9;
+}
+
+.lives {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.hint, .safe, .btnMode{
+    padding: 4px;
+    border-radius: 10px;
+    margin-top: 3px;
+margin-bottom: 3px;
 }
