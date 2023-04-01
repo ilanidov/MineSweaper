@@ -364,8 +364,8 @@ function darkMode() {
     else (elToDark.innerText = 'ON')
 
     var elToDarkImg = document.querySelector('body')
-    if (elToDark.innerText === 'ON') elToDarkImg.style.backgroundImage = ' url(../img/4.jpg)';
-    else elToDarkImg.style.backgroundImage = ' url(../img/2.jpg)';
+    if (elToDark.innerText === 'ON') elToDarkImg.style.backgroundImage = ' url(img/4.jpg)';
+    else elToDarkImg.style.backgroundImage = ' url(img/2.jpg)';
 }
 
 function safeClick() {
