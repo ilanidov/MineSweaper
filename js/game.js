@@ -188,7 +188,7 @@ function emptyNgsReveal(idxI, idxJ) {
 
             var iAbsDiff = Math.abs(idxI - i)
             var jAbsDiff = Math.abs(idxJ - j)
-            if ((iAbsDiff === 1) && (jAbsDiff === 1)) continue
+            // if ((iAbsDiff === 1) && (jAbsDiff === 1)) continue
             if (currCell.isMarked || currCell.isMine || (currCell.isShown)) continue
 
             currElCell.classList.add('shown')
